@@ -8,7 +8,7 @@ import (
 )
 
 func main() {
-	fmt.Println("IPS:")
+	fmt.Println("-----------------")
 
 	aplicacao := app.Gerar()
 	erro := aplicacao.Run(os.Args)
@@ -16,5 +16,5 @@ func main() {
 		log.Fatal(erro)
 		fmt.Println("Caiu no Erro!")
 	}
-
+	fmt.Println("-----------------")
 }
